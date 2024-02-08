@@ -54,8 +54,16 @@ export const HomePage = () => {
             <AddWordForm onAdd={handleAddWord}/>
             <button onClick={handleStart}>{started ? 'Stop' : 'Start'}</button>
             <div>
+                words added:
+                <div>
+                    {words.map(((word, i) => (
+                        <div key={i}>{word}</div>
+                    )))}
+                </div>
+            </div>
+            <div>
                 <h4>
-                   Results
+                    Results
                 </h4>
                 <div>
                     {results.map(((result, i) => (
