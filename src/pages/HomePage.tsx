@@ -2,7 +2,7 @@ import {useEffect, useRef, useState} from 'react';
 
 import {Header, Paragraph} from './HomePage.styles';
 import {AddWordForm} from '../components/AddWordForm';
-import {SpeechRecognition, SpeechGrammarList, SpeechRecognitionEvent} from '../types';
+import {SpeechRecognition, SpeechGrammarList} from '../types';
 
 export const HomePage = () => {
     const [words, setWords] = useState<string[]>([]);
